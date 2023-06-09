@@ -1,0 +1,3 @@
+#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 240
+#define RETRO_TAPPING
