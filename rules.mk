@@ -9,3 +9,4 @@ COMBO_ENABLE = yes
 REPEAT_KEY_ENABLE = yes
 
 SRC += swapper.c
+SRC += features/achordion.c
