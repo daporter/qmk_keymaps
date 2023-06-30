@@ -8,5 +8,6 @@ CAPS_WORD_ENABLE = yes
 COMBO_ENABLE = yes
 REPEAT_KEY_ENABLE = yes
 
-SRC += swapper.c
 SRC += features/achordion.c
+SRC += features/custom_shift_keys.c
+SRC += features/swapper.c
