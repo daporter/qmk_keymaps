@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├──────┼──────┼──────┼──────┼──────┤                  ├──────┼──────┼──────┼──────┼──────┤
  * │  !   │  -   │  +   │  =   │  :   │                  │  |   │  _   │  (   │  )   │  %   │
  * ├──────┼──────┼──────┼──────┼──────┤                  ├──────┼──────┼──────┼──────┼──────┤
- * │      │      │  *   │  \   │  ~   │                  │      │  #   │  {   │  }   │      │
+ * │ APP  │      │  *   │  \   │  ~   │                  │      │  #   │  {   │  }   │      │
  * └───────────────────────────┼──────┼──────┐    ┌──────┼──────┼──────┴──────┴──────┴──────┘
  *                             │      │      │    │      │      │
  *                             │      │      │    │      │      │
@@ -75,8 +75,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [SYM] = LAYOUT(
     KC_GRV,  KC_LT,   KC_GT,   KC_AT,   KC_CIRC,       KC_AMPR, KC_DLR,  KC_LBRC, KC_RBRC, _______,
     KC_EXLM, KC_MINS, KC_PLUS, KC_EQL,  KC_COLN,       KC_PIPE, KC_UNDS, KC_LPRN, KC_RPRN, KC_PERC,
-    XXXXXXX, XXXXXXX, KC_ASTR, KC_BSLS, KC_TILD,       _______, KC_HASH, KC_LCBR, KC_RCBR, XXXXXXX,
-			       _______,   _______,   _______ ,   _______),
+    KC_APP,  XXXXXXX, KC_ASTR, KC_BSLS, KC_TILD,       _______, KC_HASH, KC_LCBR, KC_RCBR, XXXXXXX,
+                               _______,   _______,   _______ ,   _______),
 
 /* ┌──────┬──────┬──────┬──────┬──────┐                  ┌──────┬──────┬──────┬──────┬──────┐
  * │      │ back │ stab │ fwd  │      │                  │ esc  │ pgup │  up  │ pgdn │ caps │
