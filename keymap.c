@@ -182,6 +182,7 @@ const uint16_t PROGMEM combo_j_g[]        = { KC_J,   KC_G,    COMBO_END };
 const uint16_t PROGMEM combo_g_m[]        = { KC_G,   KC_M,    COMBO_END };
 const uint16_t PROGMEM combo_m_p[]        = { KC_M,   KC_P,    COMBO_END };
 // Right top row
+const uint16_t PROGMEM combo_dot_rep[]    = { KC_DOT, QK_REP,  COMBO_END };
 const uint16_t PROGMEM combo_rep_sl[]     = { QK_REP, KC_SLSH, COMBO_END };
 const uint16_t PROGMEM combo_dot_rep_sl[] = { KC_DOT, QK_REP,  KC_SLSH, COMBO_END };
 
@@ -204,13 +205,17 @@ combo_t key_combos[] = {
 	COMBO(combo_j_g,        KC_Q),
 	COMBO(combo_g_m,        QU),
 	COMBO(combo_m_p,        KC_Z),
+
+	COMBO(combo_dot_rep,    QK_AREP),
 	COMBO(combo_rep_sl,     KC_BSPC),
 	COMBO(combo_dot_rep_sl, C(KC_BSPC)),
 
 	COMBO(combo_n_d,        KC_TAB),
 	COMBO(combo_s_n_d,      KC_ESC),
 	COMBO(combo_d_b,        KC_DEL),
+
 	COMBO(combo_a_e_i,      KC_ENT),
+
 	COMBO(combo_n_e,        CW_TOGG),    // Caps Word
 
 	COMBO(combo_t_sym,      MO(ADJ)),
