@@ -188,7 +188,7 @@ const uint16_t PROGMEM combo_dot_rep_sl[] = { KC_DOT, QK_REP,  KC_SLSH, COMBO_EN
 
 // Left home row
 const uint16_t PROGMEM combo_n_d[]        = { HOME_N, HOME_D,  COMBO_END };
-const uint16_t PROGMEM combo_s_n_d[]      = { HOME_S, HOME_N,  HOME_D,  COMBO_END };
+const uint16_t PROGMEM combo_s_n[]        = { HOME_S, HOME_N,  COMBO_END };
 const uint16_t PROGMEM combo_d_b[]        = { HOME_D, KC_B,    COMBO_END };
 // Right home row
 const uint16_t PROGMEM combo_a_e_i[]      = { HOME_A, HOME_E,  HOME_I,  COMBO_END };
@@ -211,7 +211,7 @@ combo_t key_combos[] = {
 	COMBO(combo_dot_rep_sl, C(KC_BSPC)),
 
 	COMBO(combo_n_d,        KC_TAB),
-	COMBO(combo_s_n_d,      KC_ESC),
+	COMBO(combo_s_n,        KC_ESC),
 	COMBO(combo_d_b,        KC_DEL),
 
 	COMBO(combo_a_e_i,      KC_ENT),
