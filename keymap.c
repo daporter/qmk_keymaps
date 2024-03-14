@@ -37,6 +37,9 @@ enum custom_keycodes {
 #define HOME_I RALT_T(KC_I)
 #define HOME_H RGUI_T(KC_H)
 
+#define C_APP LT(0, KC_C)
+#define U_APP LT(0, KC_U)
+
 #define L_NAV MO(NAV)
 #define L_SYM MO(SYM)
 
@@ -57,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT(
     KC_J,   KC_G,   KC_M,   KC_P,   KC_V,         KC_SCLN, KC_DOT, KC_SLSH, KC_DQUO, KC_QUOT,
     HOME_R, HOME_S, HOME_N, HOME_D, KC_B,         KC_COMM, HOME_A, HOME_E,  HOME_I,  HOME_H,
-    KC_X,   KC_F,   KC_L,   KC_C,   KC_W,         KC_MINS, KC_U,   KC_O,    KC_Y,    KC_K,
+    KC_X,   KC_F,   KC_L,   C_APP,  KC_W,         KC_MINS, U_APP,  KC_O,    KC_Y,    KC_K,
 				L_NAV, KC_T,   KC_SPC, L_SYM),
 
 
@@ -183,8 +186,8 @@ layer_state_t layer_state_set_user(layer_state_t state)
 const uint16_t PROGMEM combo_j_g[]        = { KC_J,   KC_G,    COMBO_END };
 const uint16_t PROGMEM combo_m_p[]        = { KC_M,   KC_P,    COMBO_END };
 // Right top row
-const uint16_t PROGMEM compo_dquo_sl[]    = { KC_DQUO, KC_SLSH, COMBO_END };
-const uint16_t PROGMEM combo_dot_rep_sl[] = { KC_DOT,  KC_DQUO, KC_SLSH, COMBO_END };
+const uint16_t PROGMEM combo_sl_dquo[]    = { KC_SLSH, KC_DQUO, COMBO_END };
+const uint16_t PROGMEM combo_dot_sl_dquo[] = { KC_DOT,  KC_SLSH, KC_DQUO, COMBO_END };
 
 // Left home row
 const uint16_t PROGMEM combo_n_d[]        = { HOME_N, HOME_D,  COMBO_END };
@@ -197,8 +200,8 @@ const uint16_t PROGMEM combo_n_e[]        = { HOME_N, HOME_E,  COMBO_END };
 
 // Left bottom row
 // Right bottom row
-const uint16_t PROGMEM combo_u_y[]        = { KC_U,   KC_Y,    COMBO_END };
-const uint16_t PROGMEM combo_y_k[]        = { KC_Y,   KC_K,    COMBO_END };
+const uint16_t PROGMEM combo_u_y[]        = { U_APP, KC_Y, COMBO_END };
+const uint16_t PROGMEM combo_y_k[]        = { KC_Y,  KC_K, COMBO_END };
 
 // Thumbs
 const uint16_t PROGMEM combo_t_sym[]      = { KC_T,   L_SYM,   COMBO_END };
@@ -206,8 +209,8 @@ const uint16_t PROGMEM combo_t_sym[]      = { KC_T,   L_SYM,   COMBO_END };
 combo_t key_combos[] = {
 	COMBO(combo_j_g,        KC_Z),
 
-	COMBO(compo_dquo_sl,    KC_BSPC),
-	COMBO(combo_dot_rep_sl, C(KC_BSPC)),
+	COMBO(combo_sl_dquo,     KC_BSPC),
+	COMBO(combo_dot_sl_dquo, C(KC_BSPC)),
 
 	COMBO(combo_n_d,        KC_TAB),
 	COMBO(combo_s_n,        KC_ESC),
@@ -296,6 +299,27 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
 		if (record->event.pressed)
 			SEND_STRING("qu");
 		break;
+
+	/* Make ‘c’ and ‘u’ to act as Hyper modifiers when they are
+	   held.  This requires two steps:
+
+	   1. In QMK, when c and u are held, send the the App key (called
+	      "Menu" in Xorg).
+
+	   2. In Xorg, map the Menu key (called "App" in QMK) to the Hyper
+	      modifier. */
+
+	case C_APP:
+	case U_APP:
+		if (record->tap.count)
+			break;
+
+		if (record->event.pressed)
+			register_code(KC_APP);
+		else
+			unregister_code(KC_APP);
+
+		return false;
 	}
 
 	return true;
