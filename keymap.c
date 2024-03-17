@@ -18,7 +18,6 @@
 
 #include "features/achordion.h"
 #include "features/custom_shift_keys.h"
-#include "features/swapper.h"
 
 enum layers { BASE, NAV, SYM, NUM, FN, ADJ };
 
@@ -231,22 +230,15 @@ bool achordion_chord(uint16_t tap_hold_keycode, keyrecord_t *tap_hold_record,
 	return achordion_opposite_hands(tap_hold_record, other_record);
 }
 
-/*
- * Swapper.
- */
-
-bool sw_win_active = false;
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record)
 {
 	if (!process_achordion(keycode, record)) {
 		return false;
 	}
+
 	if (!process_custom_shift_keys(keycode, record)) {
 		return false;
 	}
-	update_swapper(&sw_win_active, KC_LCTL, KC_TAB, SW_TAB, keycode,
-		       record);
 
 	switch (keycode) {
 		/* Make ‘c’ and ‘u’ to act as Hyper modifiers when they are
