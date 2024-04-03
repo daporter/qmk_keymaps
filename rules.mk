@@ -7,5 +7,8 @@ BOOTLOADER = rp2040
 CAPS_WORD_ENABLE = yes
 COMBO_ENABLE = yes
 
+# Easy definition of combos.
+VPATH +=  keyboards/gboards/
+
 SRC += features/achordion.c
 SRC += features/custom_shift_keys.c

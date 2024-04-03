@@ -150,12 +150,12 @@ __
 #define LV_LB3 KC_WH_U
 #define LV_LB2 KC_WH_D
 #define LV_LB1 KC_WH_R
-#define LV_LB0 SK_REDO
+#define LV_LB0 C(S(KC_Z))
 #define LV_RB0 KC_ACL2
-#define LV_RB1 SK_CUT
-#define LV_RB2 SK_COPY
-#define LV_RB3 SK_PSTE
-#define LV_RB4 SK_UNDO
+#define LV_RB1 C(KC_X)
+#define LV_RB2 C(KC_C)
+#define LV_RB3 C(KC_V)
+#define LV_RB4 C(KC_Z)
 
 #define LV_LH2 LCTL_T(KC_BSPC)
 #define LV_LH1 LSFT_T(KC_ENT)
@@ -177,27 +177,27 @@ __
  ╰────────────────────────────╯   __     __
 */
 
-#define LC_LT4 SK_Lux
-#define LC_LT3 SK_Win
-#define LC_LT2 SK_Mac
+#define LC_LT4 KC_NO
+#define LC_LT3 KC_NO
+#define LC_LT2 KC_NO
 #define LC_LT1 QK_RBT
-#define LC_LT0 SK_KILL
+#define LC_LT0 KC_NO
 #define LC_RT0 LCA(KC_DEL)
 #define LC_RT1 KC_NUM
 #define LC_RT2 KC_EJCT
 #define LC_RT3 KC_NO
-#define LC_RT4 SK_ZOOMRST
+#define LC_RT4 KC_NO
 
-#define LC_LM4 HD_AdaptKeyToggle
-#define LC_LM3 HD_L_QWERTY
-#define LC_LM2 HD_L_ALPHA
+#define LC_LM4 KC_NO
+#define LC_LM3 KC_NO
+#define LC_LM2 KC_NO
 #define LC_LM1 KC_VOLU
 #define LC_LM0 KC_BRIU
 #define LC_RM0 KC_NO
 #define LC_RM1 KC_MPRV
 #define LC_RM2 KC_MUTE
 #define LC_RM3 KC_MNXT
-#define LC_RM4 SK_ZOOMOUT
+#define LC_RM4 KC_NO
 
 #define LC_LB4 QK_BOOT
 #define LC_LB3 AG_SWAP
@@ -208,7 +208,7 @@ __
 #define LC_RB1 KC_MRWD
 #define LC_RB2 KC_MPLY
 #define LC_RB3 KC_MFFD
-#define LC_RB4 SK_ZOOMIN
+#define LC_RB4 KC_NO
 
 #define LC_LH2 KC_VOLD
 #define LC_LH1 KC_VOLU

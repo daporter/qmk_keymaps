@@ -16,13 +16,13 @@
 
 #include QMK_KEYBOARD_H
 
-#include "combo.h"
-#include "combo_defs.c"
 #include "features/achordion.h"
 #include "features/custom_shift_keys.h"
+
 #include "handsdown_au.h"
 #include "layers.h"
-#include "semantic_keys.h"
+
+#include "g/keymap_combo.h"
 
 enum layers { L_HD, L_SYM, L_NUM, L_NAV, L_CFG };
 
