@@ -44,7 +44,7 @@ layers:
         MAcc2, cut, copy, pste, undo, ]
     - {type: held}
     - ""
-    - "0"
+    - ""
     - "."
   CFG:
     - [ "", "", "", REBOOT, "",

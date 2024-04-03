@@ -18,13 +18,13 @@
 #define LAYERS_H
 
 /*
-  L_SYM Symbols and punctuation.
-  ╭─────────────────╮                 ╭─────────────────╮
-  │  Z  Q  ¶  §  ‡  │                 │  ¢  $  €  £  ¥  │
-  │  <  [  (  {  †  │                 │  ¡  *  =  +  /  │
-  │  >  ]  )  }  •  │                 │  _  |  &  ^  %  │
-  ╰────────────╮ D_WordL  D_WordR │   │  ª  °  ╭────────╯
-	       ╰──────────────-───╯   ╰────────╯
+  L_SYM: Symbols and punctuation.
+  ╭─────────────────╮   ╭─────────────────╮
+  │  `  <  >  @  .  │   │  &  _  $  ?     │
+  │  !  -  +  =  #  │   │  |  {  (  [  %  │
+  │  :  /  *  ^  \  │   │  ~  }  )  ]     │
+  ╰──────────╮      │   │      ╭──────────╯
+	     ╰──-───╯   ╰──────╯
  */
 
 #define LS_LT4 KC_GRV
@@ -66,13 +66,13 @@
 #define LS_RH2 KC_NO
 
 /*
-  L_NUM layer Fn-key row (left) and Num row (right).
-  ╭─────────────────────╮        ╭───────────────╮
-  │ F9  F10 F11 F12 F13 │        │ /  7  8  9  - │
-  │ F5  F6  F7  F8  F14 │        │ *  1  2  3  + │
-  │ F1  F2  F3  F4  INS │        │ ,  4  5  6  = │
-  ╰────────────╮ ;  L_NUM │   │ 0  . ╭───────────╯
-	       ╰──────-───╯   ╰──────╯
+  L_NUM: Function keys and numbers.
+  ╭───────────────────────╮   ╭─────────────────────╮
+  │  F9  F10 F11 F12 F13  │   │  /   7   8   9   -  │
+  │  F5  F6  F7  F8  F14  │   │  *   1   2   3   +  │
+  │  F1  F2  F3  F4  INS  │   │  ,   4   5   6   =  │
+  ╰────────────╮ ;  L_NAV │   │  0   . ╭────────────╯
+	       ╰──────-───╯   ╰────────╯
 */
 
 #define LN_LT4 KC_F9
@@ -114,14 +114,13 @@
 #define LN_RH2 KC_DOT
 
 /*
-  L_NAV Navigation (left) NUMPad Layer (right) (LN).
-   ╭──────────────────────────────────────────╮ ╭──────────────────────────────────────────╮
-__ │ NUM_LK   PGUP    UP      PGDN      TAB   │ │  PSLS      P7 P8 P9      PMNS │ __
-__ │ W_LEFT   LEFT    DOWN    RGHT     W_RGHT | |  PAST      P4 P5 P6      PPLS │ __
-__ │ UNDO     CUT     COPY    PSTE      SPC   │ │  PCMM      P1 P2 P3      PEQL │ __
-   ╰────────────────╮  __   G_T(BSP)  C_T(ENT)│ __         __ │ P0        PDOT    __   ╭────────────────╯
-	__      __  ╰─────────────────────────╯ ╰─────────────────────────╯ __
-__
+  L_NAV: Mouse and keyboard navigation.
+ ╭──────────────────────────────────╮   ╭──────────────────────────────╮
+ │ MB4    MB3   MB2    MB1    ←Win │   │ MAcc0   ⇱    ⇞    ⇟    ⇲  │
+ │ ←M    ↑M    M↓    M→    Win→ │   │ MAcc1  ←    ↑    ↓    →   │
+ │ ←MWh  ↑MWh  MWh↓  MWh→  redo  │   │ MAcc2  cut  copy  pste  undo │
+ ╰────────────────────────╮         │   │           ╭──────────────────╯
+                          ╰─────────╯   ╰───────────╯
 */
 
 #define LV_LT4 KC_BTN4
@@ -163,18 +162,13 @@ __
 #define LV_RH2 KC_DOT
 
 /*
-  L_CFG Keyboard Configuration (left) and Media Settings (right).
-	 ╭──────────────────────────────────────────╮
- ╭───────────────────────────────────────────────╮
-      __ │  SK_Lux  SK_Win  SK_Mac  QK_RBT  SK_KILL │ │ (C(A(del)))KC_NUM
- KC_EJCT KC_NO   SK_ZOOMRST │ RGB_MOD RGB_VAI │  HD_AKTg L_0     L_1     KC_VOLU
- KC_BRIU |                            | KC_NO     KC_MPRV  KC_MUTE KC_MNXT
- SK_ZOOMOUT │ RGB_SAI RGB_HUI │  QK_BOOT AG_SWAP AG_NORM KC_VOLD KC_BRID │
- RGB_VAD  __    __  RGB_SAD │ KC_NO     KC_MRWD  KC_MPLY KC_MFFD SK_ZOOMIN  │
- RGB_HUD ╰──────────────────╮   __     __   EE_CLR  │ __                     __
- │   __       __       __     ╭──────────────────╯
-		    __   __ ╰───────────────────────╯
- ╰────────────────────────────╯   __     __
+  L_CFG: Keyboard configuration and media settings.
+  ╭─────────────────────────╮   ╭─────────────────────╮
+  │             RBT         │   │                     │
+  │             vol↑ bri↑ │   │         mute        │
+  │  BOOT       vol↓ bri↓ │   │                     │
+  ╰──────────────╮          │   │         ╭───────────╯
+		 ╰──────────╯   ╰─────────╯
 */
 
 #define LC_LT4 KC_NO
