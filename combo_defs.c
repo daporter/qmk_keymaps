@@ -8,6 +8,7 @@ const uint16_t PROGMEM Hstab_combo[]  = { HD_LM3, HD_LM2, HD_LM1, COMBO_END };
 const uint16_t PROGMEM Htab_combo[]   = { HD_LM2, HD_LM1, COMBO_END };
 const uint16_t PROGMEM F_CAPS_combo[] = { HD_LM2, HD_RM2, COMBO_END };
 const uint16_t PROGMEM H_CAPW_combo[] = { HD_LM1, HD_RM1, COMBO_END };
+const uint16_t PROGMEM H_EQL_combo[]  = { HD_RT1, HD_RT2, COMBO_END };
 // clang-format on
 
 combo_t key_combos[] = {
@@ -19,5 +20,6 @@ combo_t key_combos[] = {
 	[HC_TAB]  = COMBO(Htab_combo,   KC_TAB),
 	[FC_CAPS] = COMBO(F_CAPS_combo, KC_CAPS),
 	[HC_CAPW] = COMBO(H_CAPW_combo, CW_TOGG),
+	[HC_EQL]  = COMBO(H_EQL_combo,  KC_EQL),
 	// clang-format on
 };

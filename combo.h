@@ -13,6 +13,8 @@ enum my_combos {
 	HC_Q,
 	HC_Z,
 
+	HC_EQL,
+
 	COMBO_LENGTH
 };
 

@@ -61,6 +61,7 @@ layers:
 combos:
   - { p: [1, 2], k: q, l: [HD] }
   - { p: [2, 3], k: z, l: [HD] }
+  - { p: [6, 7], k: "=", l: [HD] }
   - { p: [11, 12], k: Esc, l: [HD] }
   - { p: [11, 12, 13], k: STab, l: [HD] }
   - { p: [12, 13], k: Tab, l: [HD] }
