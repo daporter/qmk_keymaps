@@ -5,6 +5,7 @@
 enum my_combos {
 	FC_ESC,
 	HC_CAPW,
+	FC_CAPS,
 
 	HC_TAB,
 	HC_STAB,
