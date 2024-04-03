@@ -12,7 +12,7 @@ const uint16_t PROGMEM H_Q_combo[]    = { HD_LM3, HD_LM1, COMBO_END };
 
 combo_t key_combos[] = {
 	[FC_ESC]  = COMBO(F_ESC_combo, KC_ESC),
-	[HC_CAPW] = COMBO_ACTION(H_CAPW_combo),
+	[HC_CAPW] = COMBO(H_CAPW_combo, CW_TOGG),
 	[HC_TAB]  = COMBO(Htab_combo, KC_TAB),
 	[HC_STAB] = COMBO(Hstab_combo, S(KC_TAB)),
 	[HC_Z]    = COMBO(H_Z_combo, HD_Z),
