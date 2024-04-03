@@ -97,10 +97,12 @@ uint8_t NUM_CUSTOM_SHIFT_KEYS =
 bool achordion_chord(uint16_t tap_hold_keycode, keyrecord_t *tap_hold_record,
 		     uint16_t other_keycode, keyrecord_t *other_record)
 {
-	// Consider the following chords as holds, even though they’re
-	// on the same hand in the Hands Down layout.
+	// Consider the following chords as holds, even though they’re on the
+	// same hand in the Hands Down layout.
 	switch (tap_hold_keycode) {
+	case HD_LH1:
 	case HD_LH2:
+	case HD_RH1:
 	case HD_RH2:
 		return true;
 	}
