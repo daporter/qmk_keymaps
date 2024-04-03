@@ -24,7 +24,7 @@
 #include "layers.h"
 #include "semantic_keys.h"
 
-enum layers { L_HD, L_SYM, L_FUN, L_NUM, L_NAV, L_CFG };
+enum layers { L_HD, L_SYM, L_NUM, L_NAV, L_CFG };
 
 /*
   Alpha Layer for a 34 key (3x5+2) form factor.
@@ -50,12 +50,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LS_LM4, LS_LM3, LS_LM2, LS_LM1, LS_LM0,                     LS_RM0, LS_RM1, LS_RM2, LS_RM3, LS_RM4,
     LS_LB4, LS_LB3, LS_LB2, LS_LB1, LS_LB0,                     LS_RB0, LS_RB1, LS_RB2, LS_RB3, LS_RB4,
 				    LS_LH2, LS_LH1,     LS_RH1, LS_RH2),
-
-    [L_FUN] = LAYOUT(
-    LF_LT4, LF_LT3, LF_LT2, LF_LT1, LF_LT0,                     LF_RT0, LF_RT1, LF_RT2, LF_RT3, LF_RT4,
-    LF_LM4, LF_LM3, LF_LM2, LF_LM1, LF_LM0,                     LF_RM0, LF_RM1, LF_RM2, LF_RM3, LF_RM4,
-    LF_LB4, LF_LB3, LF_LB2, LF_LB1, LF_LB0,                     LF_RB0, LF_RB1, LF_RB2, LF_RB3, LF_RB4,
-				    LF_LH2, LF_LH1,     LF_RH1, LF_RH2),
 
     [L_NUM] = LAYOUT(
     LN_LT4, LN_LT3, LN_LT2, LN_LT1, LN_LT0,                     LN_RT0, LN_RT1, LN_RT2, LN_RT3, LN_RT4,

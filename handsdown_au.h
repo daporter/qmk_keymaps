@@ -23,7 +23,7 @@
 #define HD_Q KC_Q
 #define HD_R LGUI_T(KC_R)
 #define HD_S LALT_T(KC_S)
-#define HD_T LT(L_FUN, KC_T)
+#define HD_T LT(L_NUM, KC_T)
 #define HD_U KC_U
 #define HD_V KC_V
 #define HD_W KC_W
@@ -39,7 +39,7 @@
 #define HD_COMM KC_COMM
 #define HD_MINS KC_MINS
 #define HD_SPC	LT(L_SYM, KC_SPC)
-#define HD_BSPC LT(L_NUM, KC_BSPC)
+#define HD_BSPC LT(L_NAV, KC_BSPC)
 #define HD_ENT	LT(L_CFG, KC_ENT)
 
 /*
