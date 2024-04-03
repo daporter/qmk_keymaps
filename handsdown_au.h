@@ -31,16 +31,16 @@
 #define HD_Y KC_Y
 #define HD_Z KC_Z
 
+#define HD_SCLN KC_SCLN
+#define HD_DOT	KC_DOT
+#define HD_SLSH KC_SLSH
+#define HD_DQUO KC_DQUO
+#define HD_QUOT KC_QUOT
+#define HD_COMM KC_COMM
 #define HD_MINS KC_MINS
-#define HD_HASH KC_HASH
 #define HD_SPC	LT(L_SYM, KC_SPC)
 #define HD_BSPC LT(L_NUM, KC_BSPC)
 #define HD_ENT	LT(L_CFG, KC_ENT)
-#define HD_QUOT KC_QUOT
-#define HD_DQUO KC_DQUO
-#define HD_SLSH KC_SLSH
-#define HD_DOT	KC_DOT
-#define HD_COMM KC_COMM
 
 /*
   Place these HD keycodes on the keymap for variation independent spatial
@@ -62,7 +62,7 @@
 #define HD_LT2 HD_M
 #define HD_LT1 HD_P
 #define HD_LT0 HD_V
-#define HD_RT0 HD_HASH
+#define HD_RT0 HD_SCLN
 #define HD_RT1 HD_DOT
 #define HD_RT2 HD_SLSH
 #define HD_RT3 HD_DQUO
