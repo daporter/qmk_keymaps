@@ -28,42 +28,42 @@
  */
 
 #define LS_LT4 KC_GRV
-#define LS_LT3 KC_COLN
-#define LS_LT2 KC_QUES
-#define LS_LT1 KC_BSLS
-#define LS_LT0 KC_CIRC
+#define LS_LT3 KC_LABK
+#define LS_LT2 KC_RABK
+#define LS_LT1 KC_AT
+#define LS_LT0 KC_DOT
 #define LS_RT0 KC_AMPR
-#define LS_RT1 KC_TILD
-#define LS_RT2 KC_PERC
-#define LS_RT3 KC_AT
-#define LS_RT4 SK_EURO
+#define LS_RT1 KC_UNDS
+#define LS_RT2 KC_DLR
+#define LS_RT3 KC_QUES
+#define LS_RT4 KC_NO
 
-#define LS_LM4 KC_LT
-#define LS_LM3 KC_LBRC
-#define LS_LM2 KC_LPRN
-#define LS_LM1 KC_LCBR
+#define LS_LM4 KC_EXLM
+#define LS_LM3 KC_MINS
+#define LS_LM2 KC_PLUS
+#define LS_LM1 KC_EQL
 #define LS_LM0 KC_HASH
 #define LS_RM0 KC_PIPE
-#define LS_RM1 KC_EQL
-#define LS_RM2 KC_PLUS
-#define LS_RM3 KC_MINS
-#define LS_RM4 KC_EXLM
+#define LS_RM1 KC_LCBR
+#define LS_RM2 KC_LPRN
+#define LS_RM3 KC_LBRC
+#define LS_RM4 KC_PERC
 
-#define LS_LB4 KC_GT
-#define LS_LB3 KC_RBRC
-#define LS_LB2 KC_RPRN
-#define LS_LB1 KC_RCBR
-#define LS_LB0 SK_MDSH
-#define LS_RB0 KC_UNDS
-#define LS_RB1 KC_DLR
-#define LS_RB2 KC_ASTR
-#define LS_RB3 KC_SLSH
-#define LS_RB4 SK_ELPS
+#define LS_LB4 KC_COLN
+#define LS_LB3 KC_SLSH
+#define LS_LB2 KC_ASTR
+#define LS_LB1 KC_CIRC
+#define LS_LB0 KC_BSLS
+#define LS_RB0 KC_TILD
+#define LS_RB1 KC_RCBR
+#define LS_RB2 KC_RPRN
+#define LS_RB3 KC_RBRC
+#define LS_RB4 KC_NO
 
-#define LS_LH2 SK_DELWDL
-#define LS_LH1 SK_DELWDR
-#define LS_RH1 LALT(KC_9)    // ª
-#define LS_RH2 LSA(KC_8)     // °
+#define LS_LH2 KC_NO
+#define LS_LH1 KC_NO
+#define LS_RH1 KC_NO
+#define LS_RH2 KC_NO
 
 /*
   L_NUM layer Fn-key row (left) and Num row (right).
