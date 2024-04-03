@@ -47,11 +47,11 @@ layers:
     - "0"
     - "."
   CFG:
-    - [ "", "", "", REBOOT, "", 
+    - [ "", "", "", REBOOT, "",
         "", "", "", "", "", ]
-    - [ "", "", "", "vol↑", "bright↑", 
+    - [ "", "", "", "vol↑", "bright↑",
         "", "", "mute", "", "", ]
-    - [ BOOT, "", "", "vol↓", bright↓, 
+    - [ BOOT, "", "", "vol↓", bright↓,
         "", "", "", "", "", ]
     - ""
     - ""
@@ -59,10 +59,10 @@ layers:
     - {type: held}
 
 combos:
-  - { p: [0, 1], k: Tab, l: [HD] }
-  - { p: [0, 1, 2], k: STab, l: [HD] }
-  - { p: [1, 3], k: z, l: [HD] }
-  - { p: [10, 13], k: Esc, l: [HD] }
-  - { p: [11, 13], k: q, l: [HD] }
-  - { p: [11, 12, 16, 17], k: Caps, l: [HD] }
-  - { p: [12, 13, 17, 18], k: CapsW, l: [HD] }
+  - { p: [1, 2], k: q, l: [HD] }
+  - { p: [2, 3], k: z, l: [HD] }
+  - { p: [11, 12], k: Esc, l: [HD] }
+  - { p: [11, 12, 13], k: STab, l: [HD] }
+  - { p: [12, 13], k: Tab, l: [HD] }
+  - { p: [12, 17], k: Caps, l: [HD] }
+  - { p: [13, 16], k: CapsW, l: [HD] }
