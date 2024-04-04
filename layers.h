@@ -165,7 +165,7 @@
   L_CFG: Keyboard configuration and media settings.
   ╭─────────────────────────╮   ╭─────────────────────╮
   │             RBT         │   │                     │
-  │             vol↑ bri↑ │   │         mute        │
+  │  MAKE       vol↑ bri↑ │   │         mute        │
   │  BOOT       vol↓ bri↓ │   │                     │
   ╰──────────────╮          │   │         ╭───────────╯
 		 ╰──────────╯   ╰─────────╯
@@ -182,7 +182,7 @@
 #define LC_RT3 KC_NO
 #define LC_RT4 KC_NO
 
-#define LC_LM4 KC_NO
+#define LC_LM4 QK_MAKE
 #define LC_LM3 KC_NO
 #define LC_LM2 KC_NO
 #define LC_LM1 KC_VOLU

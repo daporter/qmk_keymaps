@@ -8,3 +8,7 @@
 
 // Controls if a given combo should fire only if tapped within COMBO_HOLD_TERM
 #define COMBO_MUST_TAP_PER_COMBO
+
+// Enable the QK_MAKE key.  See:
+// https://docs.qmk.fm/#/quantum_keycodes?id=qmk-keycodes
+#define ENABLE_COMPILE_KEYCODE
