@@ -4,6 +4,7 @@
 COMB(combo_H_Q,     HD_Q,          HD_LT3, HD_LT2)
 COMB(combo_H_Z,     HD_Z,          HD_LT2, HD_LT1)
 // Right top row.
+COMB(combo_euro,    UC(0x20AC),    HD_RT0, HD_RT1)    // €
 COMB(combo_EQL,     KC_EQL,        HD_RT1, HD_RT2)
 
 // Left middle row.
@@ -18,10 +19,10 @@ COMB(combo_CAPW,    CW_TOGG,       HD_LM1, HD_RM1)
 
 // Left bottom row.
 // Right bottom row.
-COMB(combo_ndsh,    UC(0x2013),    HD_RB0, HD_RB1)    // en-dash
-COMB(combo_mdsh,    UC(0x2014),    HD_RB0, HD_RB2)    // em-dash
+COMB(combo_ndsh,    UC(0x2013),    HD_RB0, HD_RB1)    // –
+COMB(combo_mdsh,    UC(0x2014),    HD_RB0, HD_RB2)    // —
 COMB(combo_unds,    KC_UNDS,       HD_RB1, HD_RB3)
 COMB(combo_tild,    KC_TILD,       HD_RB1, HD_RB4)
-COMB(combo_elip,    UC(0x2026),    HD_RB2, HD_RB3)    // ellipsis
+COMB(combo_elip,    UC(0x2026),    HD_RB2, HD_RB3)    // …
 
 // clang-format on
