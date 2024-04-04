@@ -11,6 +11,7 @@ COMB(combo_ESC,     KC_ESC,       HD_LM3, HD_LM2)
 COMB(combo_STAB,    S(KC_TAB),    HD_LM3, HD_LM2, HD_LM1)
 COMB(combo_TAB,     KC_TAB,       HD_LM2, HD_LM1)
 // Right middle row.
+COMB(combo_scln,    KC_SCLN,      HD_RM0, HD_RM1)
 // Mixed middle row.
 COMB(combo_CAPS,    KC_CAPS,      HD_LM2, HD_RM2)
 COMB(combo_CAPW,    CW_TOGG,      HD_LM1, HD_RM1)
