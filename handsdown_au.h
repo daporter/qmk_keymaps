@@ -4,6 +4,7 @@
 /*
   First, define HD alpha keycodes with any hold-taps/custom keycodes.
 */
+// clang-format off
 #define HD_A RSFT_T(KC_A)
 #define HD_B KC_B
 #define HD_C KC_C
@@ -92,5 +93,15 @@
 #define HD_LH1 HD_T
 #define HD_RH1 HD_SPC
 #define HD_RH2 HD_ENT
+
+/*
+  Key combos that are layout-dependent.  The combos are actually defined in
+  ‘combos.def’.
+ */
+
+#define HD_combo_keys_Q       HD_G,    HD_M
+#define HD_combo_keys_Z       HD_M,    HD_P
+#define HD_combo_keys_SCLN    HD_COMM, HD_A
+// clang-format on
 
 #endif
