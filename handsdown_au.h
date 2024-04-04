@@ -31,7 +31,7 @@
 #define HD_Y KC_Y
 #define HD_Z KC_Z
 
-#define HD_SCLN KC_SCLN
+#define HD_HASH KC_HASH
 #define HD_DOT	KC_DOT
 #define HD_SLSH KC_SLSH
 #define HD_DQUO KC_DQUO
@@ -42,27 +42,25 @@
 #define HD_BSPC LT(L_NAV, KC_BSPC)
 #define HD_ENT	LT(L_CFG, KC_ENT)
 
-/*
-  Place these HD keycodes on the keymap for variation independent spatial
-  referencing by key position.
-
-  Base (alpha) layer Hands Down Gold (HRMs + thumb mods):
-  ╭─────────────────────╮   ╭─────────────────────╮
-  │  J   G   M   P   V  │   │  #$  .:  / * "[  '] │
-  │  R   S   N   D   B  │   │  ,;   A   E   I   H │
-  │  X   F   L   C   W  │   │  -+   U   O   Y   K │
-  ╰───────────╮ bsp  T  │   │ spc  ret ╭──────────╯
-	      ╰─────────╯   ╰──────────╯
-
-  Q & Z are on the sym layer and accessible combos (defined below).
- */
+// Place these HD keycodes on the keymap for variation independent spatial
+// referencing by key position.
+//
+// Base (alpha) layer Hands Down Gold (HRMs + thumb mods):
+// ╭─────────────────────╮   ╭─────────────────────╮
+// │  J   G   M   P   V  │   │  #$  .:  /*  "?  '! │
+// │  R   S   N   D   B  │   │  ,;  A   E   I   H  │
+// │  X   F   L   C   W  │   │  -+  U   O   Y   K  │
+// ╰───────────╮ bsp  T  │   │ spc  ret ╭──────────╯
+//             ╰─────────╯   ╰──────────╯
+//
+// Q & Z are on the sym layer and accessible combos (defined below).
 
 #define HD_LT4 HD_J
 #define HD_LT3 HD_G
 #define HD_LT2 HD_M
 #define HD_LT1 HD_P
 #define HD_LT0 HD_V
-#define HD_RT0 HD_SCLN
+#define HD_RT0 HD_HASH
 #define HD_RT1 HD_DOT
 #define HD_RT2 HD_SLSH
 #define HD_RT3 HD_DQUO
