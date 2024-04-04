@@ -8,3 +8,5 @@
 
 // Controls if a given combo should fire only if tapped within COMBO_HOLD_TERM
 #define COMBO_MUST_TAP_PER_COMBO
+
+#define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX

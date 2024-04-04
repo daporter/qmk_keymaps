@@ -4,8 +4,9 @@ CONVERT_TO = promicro_rp2040
 # Ensure compatibility with the rp2040 bootloader.
 BOOTLOADER = rp2040
 
-CAPS_WORD_ENABLE = yes
 COMBO_ENABLE = yes
+CAPS_WORD_ENABLE = yes
+UNICODE_ENABLE = yes
 
 # Easy definition of combos.
 VPATH +=  keyboards/gboards/
