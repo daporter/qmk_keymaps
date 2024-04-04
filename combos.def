@@ -18,5 +18,6 @@ COMB(combo_CAPW,    CW_TOGG,      HD_LM1, HD_RM1)
 // Left bottom row.
 // Right bottom row.
 COMB(combo_unds,    KC_UNDS,      HD_RB1, HD_RB3)
+COMB(combo_tild,    KC_TILD,      HD_RB1, HD_RB4)
 
 // clang-format on
